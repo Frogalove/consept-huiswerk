@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@300;400;700&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+/*Paars #5722CD;*/
+/*Blauw #4845E4;*/
+/*Roze #ED4385;*/
+/*Zwart #0C0C0C (voor standaard tekst);*/
+/*Lichtpaars #F2F0FF (voor de grote zwevende woorden, zoals "hello" en "services") Uitzonderingen:*/
+/*                                                                                 Lichtgrijs #F3F6F9 (voor de achtergrond van de projecten)*/
+/*Grijs #7A7A7A (voor de service-tegel tekst);*/
+
+
+:root {
+  --dark-purple:#5722CD;
+
+}
+
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+  font-family: Roboto,Arial, Halvetica,sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+   h1,h2,h3,h4,h5,h6 {
+     font-family: Merryweater, "Times New Roman", serif;
+
+   }
+
+
+
+/* --------------- 3.1 Reusables ----------------------- */
+
+.outer-content-container {
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.inner-content-container {
+  flex-basis: 1400px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  flex-direction: column;
+  margin:0 20px;
+  display:flex;
+
+  }
+
+/* --------------- 4.1 Header ------------------------- */
+
+
+
+
+ .header {
+   color: white;
+   background-color: #5722CD;
+ }
+
+.header-content_navigation {
+  font-size: 10px;
+  font-weight: 100;
+
+}
+
+
+/* --------------- main --------------------------- */
+.section {
+  color: #5722CD;
+  background-color: white;
+
+}
+.inner-content-container {
+  justify-content: center;
+}
+
+
+/* ------------------------------- 4. ---------------------------------------- */
+a,
+a:visited,
+a:link {
+  text-decoration: none;
+  color: #5722CD;
+}
+
+button {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: white;
+  background-color: #ED4385;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 5px 8px 4px rgba(0, 0, 0, .2);
+  padding: 25px 40px;
+  margin: 28px 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- footer-------------------------------- */
+#footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 15px;
+}
